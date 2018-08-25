@@ -6,6 +6,7 @@ from assets.person import Person
 peter = Man('Peter', 25, 130)
 sandra = Soldier('Sandra', 20, 'W', 120, 'Air Force')
 gabi = Woman('Gabi', 24, 165)
+lewis = Man('Lewis', 24, 180)
 
 if __name__ == '__main__':
 
@@ -16,5 +17,7 @@ if __name__ == '__main__':
     print(Person.num_of_people)
     print(Soldier.num_of_soldiers)
     print(Person.all_names)
+    print(lewis.height)
+
 
 
