@@ -18,3 +18,15 @@ class Soldier(Person):
         super().__init__(name, age, sex, height)
         self.unit = unit
         Soldier.num_of_soldiers += 1
+
+
+class Officer(Soldier):
+
+    num_of_officers = 0
+
+    def __init__(self, name, age, sex, height, unit, troops):
+        super().__init__(name, age, sex, height, unit)
+        self.troops = troops
+        Officer.num_of_officers += 1
+
+
